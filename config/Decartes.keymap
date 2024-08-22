@@ -33,7 +33,7 @@
 &kp TAB         &trans      &kp UP            &trans      &trans  &trans  &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp STAR      &trans  &trans  &kp KP_NUMLOCK
 &kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT   &trans  &trans  &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &trans          &kp RET
 &kp LSHFT       &trans      &trans            &trans      &trans  &BB130  &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL     &kp PLUS                      &kp RSHFT
-&kp LCTRL       &kp LGUI    &kp K_CALCULATOR  &mo 1                               &kp SPACE                                                     &mo 1         &trans  &trans  &kp DEL
+&kp LCTRL       &kp LGUI    &kp C_AL_CALC     &mo 1                               &kp SPACE                                                     &mo 1         &trans  &trans  &kp DEL
             >;
         };
 
@@ -49,11 +49,11 @@
 
         bluetooth {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0      &bt BT_SEL 1   &bt BT_SEL 2  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans          &trans            &trans         &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &kp K_CALCULATOR  &kp C_AL_CALC  &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
-&trans          &trans            &trans         &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
-&trans          &trans            &trans         &trans                                &trans                          &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
+&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
+&trans          &trans        &trans        &trans                                &trans                          &trans  &trans  &trans  &trans
             >;
         };
     };
