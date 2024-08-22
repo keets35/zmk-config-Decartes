@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
 
@@ -11,6 +12,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(B) &kp LS(B) &kp N1 &kp MINUS &kp N3 &kp N0>;
             label = "BB130";
+        };
+
+        mu: mu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_1 &kt LALT>;
+            label = "MU";
         };
     };
 
@@ -42,7 +50,7 @@
 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp BSPC
 &trans     &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans   &trans   &trans   &trans
 &trans     &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans   &trans            &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans             &mu     &trans  &trans  &trans                     &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans                     &trans
 &trans     &trans  &trans  &trans                          &kp SPACE                          &trans   &trans   &trans   &trans
             >;
         };
@@ -54,6 +62,16 @@
 &trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
 &trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
 &trans          &trans        &trans        &trans                                &trans                          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        greek {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
+&trans  &trans  &trans  &trans                          &trans                          &trans  &trans  &trans  &trans
             >;
         };
     };
