@@ -14,6 +14,34 @@
             label = "BB130";
         };
 
+        cgamma: cgamma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kt LALT>;
+            label = "CGAMMA";
+        };
+
+        cdelta: cdelta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kt LALT>;
+            label = "CDELTA";
+        };
+
+        ctheta: ctheta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kt LALT>;
+            label = "CTHETA";
+        };
+
+        clambda: clambda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kt LALT>;
+            label = "CLAMBDA";
+        };
+
         mu: mu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -40,8 +68,8 @@
 &kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH  &trans  &trans  &kp BSPC
 &kp TAB         &trans      &kp UP            &trans      &trans  &trans  &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp STAR      &trans  &trans  &kp KP_NUMLOCK
 &kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT   &trans  &trans  &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &trans          &kp RET
-&kp LSHFT       &trans      &trans            &trans      &trans  &BB130  &mu                &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL     &kp PLUS                      &kp RSHFT
-&kp LCTRL       &kp LGUI    &kp C_AL_CALC     &mo 1                               &kp SPACE                                                     &mo 1         &trans  &trans  &kp DEL
+&kp LSHFT       &trans      &kp C_AL_CALC             &trans      &trans  &BB130             &trans           &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL     &kp PLUS                      &kp RSHFT
+&kp LCTRL       &kp LGUI    &trans           &mo 1                               &kp SPACE                                                     &mo 1         &trans  &trans  &kp DEL
             >;
         };
 
