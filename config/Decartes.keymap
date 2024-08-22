@@ -12,22 +12,6 @@
             bindings = <&kp LS(B) &kp LS(B) &kp N1 &kp MINUS &kp N3 &kp N0>;
             label = "BB130";
         };
-
-        mu: mu {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <40>;
-            tap-ms = <40>;
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kt LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_1>,
-                <&macro_release>,
-                <&kt LALT>;
-
-            label = "MU";
-        };
     };
 
     keymap {
