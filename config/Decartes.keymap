@@ -5,6 +5,15 @@
 #define DEFAULT 0
 
 / {
+    macros {
+        BB130: BB130 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(B) &kp LS(B) &kp N1 &kp MINUS &kp N3 &kp N0>;
+            label = "BB130";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,11 +29,11 @@
 
         num_arrows {
             bindings = <
-&kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans             &kp N7  &kp N8   &kp N9   &kp FSLH   &trans  &trans  &kp BSPC
-&kp TAB         &trans      &kp UP            &trans      &trans  &trans  &trans             &kp N4  &kp N5   &kp N6   &kp STAR   &trans  &trans  &kp KP_NUMLOCK
-&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT   &trans  &trans  &trans             &kp N1  &kp N2   &kp N3   &kp MINUS  &trans          &kp RET
-&kp LSHFT       &trans      &trans            &trans      &trans  &trans  &trans             &kp N0  &kp DOT  &kp RET  &kp PLUS                   &kp RSHFT
-&kp LCTRL       &kp LGUI    &trans            &mo 1                               &kp SPACE                            &mo 1      &trans  &trans  &kp DEL
+&kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH  &trans  &trans  &kp BSPC
+&kp TAB         &trans      &kp UP            &trans      &trans  &trans  &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp STAR      &trans  &trans  &kp KP_NUMLOCK
+&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT   &trans  &trans  &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &trans          &kp RET
+&kp LSHFT       &trans      &trans            &trans      &trans  &BB130  &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL     &kp PLUS                      &kp RSHFT
+&kp LCTRL       &kp LGUI    &kp K_CALCULATOR  &mo 1                               &kp SPACE                                                     &mo 1         &trans  &trans  &kp DEL
             >;
         };
 
@@ -40,11 +49,11 @@
 
         bluetooth {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp M           &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
-&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
-&trans          &trans        &trans        &trans                                &trans                          &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0      &bt BT_SEL 1   &bt BT_SEL 2  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans          &trans            &trans         &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp K_CALCULATOR  &kp C_AL_CALC  &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
+&trans          &trans            &trans         &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
+&trans          &trans            &trans         &trans                                &trans                          &trans  &trans  &trans  &trans
             >;
         };
     };
