@@ -38,22 +38,8 @@
         cap_lambda: clambda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kt LALT>;
             label = "CLAMBDA";
-        };
-
-        mu: mu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_1 &kt LALT>;
-            label = "MU";
-        };
-
-        delta: delta {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_N9 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LALT>;
-            label = "DELTA";
         };
 
         cap_pi: cap_pi {
@@ -68,6 +54,179 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kt LALT>;
             label = "CAP_SIGMA";
+        };
+
+        cap_phi: cap_phi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_4 &kt LALT>;
+            label = "CAP_PHI";
+        };
+        
+        cap_psi: cap_psi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_6 &kt LALT>;
+            label = "CAP_PSI";
+        };
+        
+        cap_omega: cap_omega {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_7 &kt LALT>;
+            label = "CAP_OMEGA";
+        };
+
+        alpha: alpha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kt LALT>;
+            label = "ALPHA";
+        };
+        
+        beta: beta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_6 &kt LALT>;
+            label = "BETA";
+        };
+
+        
+        gamma: gamma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_7 &kt LALT>;
+            label = "GAMMA";
+        };
+
+        
+        delta: delta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LALT>;
+            label = "DELTA";
+        };
+
+        
+        epsilon: epsilon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_9 &kt LALT>;
+            label = "EPSILON";
+        };
+
+        
+        zeta: zeta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_0 &kt LALT>;
+            label = "ZETA";
+        };
+
+        
+        eta: eta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_1 &kt LALT>;
+            label = "ETA";
+        };
+
+        
+        theta: theta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_2 &kt LALT>;
+            label = "THETA";
+        };
+
+        
+        kappa: kappa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_4 &kt LALT>;
+            label = "KAPPA";
+        };
+
+        
+        lambda: lambda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_5 &kt LALT>;
+            label = "LAMBDA";
+        };
+
+        
+        nu: nu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_7 &kt LALT>;
+            label = "NU";
+        };
+
+        
+        xi: xi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_8 &kt LALT>;
+            label = "XI";
+        };
+
+        
+        pi: pi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_0 &kt LALT>;
+            label = "PI";
+        };
+
+        
+        rho: rho {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_1 &kt LALT>;
+            label = "RHO";
+        };
+        
+        sigma: sigma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_3 &kt LALT>;
+            label = "SIGMA";
+        };
+        
+        tau: tau {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kt LALT>;
+            label = "TAU";
+        };
+        
+        phi: phi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_6 &kt LALT>;
+            label = "PHI";
+        };
+        
+        chi: chi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_7 &kt LALT>;
+            label = "CHI";
+        };
+        
+        psi: psi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_8 &kt LALT>;
+            label = "PSI";
+        };
+        
+        omega: omega {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_9 &kt LALT>;
+            label = "OMEGA";
         };
     };
 
