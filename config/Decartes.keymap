@@ -62,14 +62,14 @@
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_4 &kt LALT>;
             label = "CAP_PHI";
         };
-        
+
         cap_psi: cap_psi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_6 &kt LALT>;
             label = "CAP_PSI";
         };
-        
+
         cap_omega: cap_omega {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,7 +83,7 @@
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kt LALT>;
             label = "ALPHA";
         };
-        
+
         beta: beta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -91,7 +91,6 @@
             label = "BETA";
         };
 
-        
         gamma: gamma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -99,7 +98,6 @@
             label = "GAMMA";
         };
 
-        
         delta: delta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -107,7 +105,6 @@
             label = "DELTA";
         };
 
-        
         epsilon: epsilon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -115,7 +112,6 @@
             label = "EPSILON";
         };
 
-        
         zeta: zeta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -123,7 +119,6 @@
             label = "ZETA";
         };
 
-        
         eta: eta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -131,7 +126,6 @@
             label = "ETA";
         };
 
-        
         theta: theta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -139,7 +133,6 @@
             label = "THETA";
         };
 
-        
         kappa: kappa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -147,7 +140,6 @@
             label = "KAPPA";
         };
 
-        
         lambda: lambda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -155,7 +147,6 @@
             label = "LAMBDA";
         };
 
-        
         nu: nu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -163,7 +154,6 @@
             label = "NU";
         };
 
-        
         xi: xi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -171,7 +161,6 @@
             label = "XI";
         };
 
-        
         pi: pi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -179,54 +168,67 @@
             label = "PI";
         };
 
-        
         rho: rho {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_1 &kt LALT>;
             label = "RHO";
         };
-        
+
         sigma: sigma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_3 &kt LALT>;
             label = "SIGMA";
         };
-        
+
         tau: tau {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kt LALT>;
             label = "TAU";
         };
-        
+
         phi: phi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_6 &kt LALT>;
             label = "PHI";
         };
-        
+
         chi: chi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_7 &kt LALT>;
             label = "CHI";
         };
-        
+
         psi: psi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_8 &kt LALT>;
             label = "PSI";
         };
-        
+
         omega: omega {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_9 &kt LALT>;
             label = "OMEGA";
+        };
+
+        Double0: Double0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0>;
+            label = "DOUBLE0";
+        };
+
+        mu: mu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kt LALT>;
+            label = "MU";
         };
     };
 
@@ -239,47 +241,37 @@
 &kp TAB    &kp Q     &kp W     &kp E   &kp R   &kp T   &kp Y              &kp U   &kp I      &kp O    &kp P     &kp LBKT   &kp RBKT   &kp BSLH
 &kp CAPS   &kp A     &kp S     &kp D   &kp F   &kp G   &kp H              &kp J   &kp K      &kp L    &kp SEMI  &kp SQT               &kp ENTER
 &kp LSHFT  &kp Z     &kp X     &kp C   &kp V   &kp B   &kp N              &kp M   &kp COMMA  &kp DOT  &kp FSLH                        &kp RSHFT
-&kp LCTRL  &kp LWIN  &kp LALT  &mo 1                           &kp SPACE                              &mo 1     &mo 2      &mo 4      &kp DEL
+&kp LCTRL  &kp LWIN  &kp LALT  &mo 1                           &kp SPACE                              &to 1     &to 2      &to 3      &kp DEL
             >;
         };
 
         num_arrows {
             bindings = <
-&kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans  &trans  &trans             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH  &trans  &trans  &kp BSPC
-&kp TAB         &trans      &kp UP            &trans      &trans  &trans  &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp STAR      &trans  &trans  &kp KP_NUMLOCK
-&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT   &trans  &trans  &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &trans          &kp RET
-&kp LSHFT       &trans      &kp C_AL_CALC     &trans      &trans  &BB130  &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL     &kp PLUS                      &kp RSHFT
-&kp LCTRL       &kp LGUI    &trans            &mo 1                               &kp SPACE                                                     &mo 1         &trans  &trans  &kp DEL
+&kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans  &trans  &trans             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH  &trans  &kp KP_EQUAL  &kp BSPC
+&kp TAB         &trans      &kp UP            &trans         &trans  &trans  &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp STAR      &trans  &trans        &kp KP_NUMLOCK
+&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT      &trans  &trans  &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &trans                &kp RET
+&kp LSHFT       &trans      &trans            &kp C_AL_CALC  &trans  &BB130  &trans             &kp KP_NUMBER_0  &Double0         &kp DOT          &kp PLUS                            &kp RSHFT
+&kp LCTRL       &kp LGUI    &trans            &to 0                                  &kp SPACE                                                     &to 0         &to 2   &trans        &kp DEL
             >;
         };
 
         Greeks_Fs {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp BSPC
-&trans     &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans   &trans   &trans   &trans
-&trans     &trans  &trans  &delta  &trans  &trans  &trans             &trans  &trans  &trans  &trans   &trans            &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans                     &trans
-&trans     &trans  &trans  &trans                          &kp SPACE                          &trans   &trans   &trans   &trans
-            >;
-        };
-
-        GreekCaps {
-            bindings = <
-&trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &cap_delta  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
-&trans  &trans  &trans  &trans                              &trans                          &trans  &trans  &trans  &trans
+&kp GRAVE  &kp F1  &kp F2  &kp F3    &kp F4  &kp F5  &kp F6             &kp F7  &kp F8  &kp F9   &kp F10  &kp F11  &kp F12  &kp BSPC
+&trans     &trans  &omega  &epsilon  &rho    &tau    &phi               &psi    &xi     &theta   &pi      &trans   &trans   &trans
+&trans     &alpha  &sigma  &delta    &trans  &gamma  &trans             &trans  &kappa  &lambda  &trans   &trans            &trans
+&trans     &zeta   &chi    &trans    &nu     &beta   &eta               &mu     &trans  &trans   &trans                     &trans
+&trans     &trans  &trans  &to 0                             &kp SPACE                           &to 1    &to 3    &trans   &trans
             >;
         };
 
         bluetooth {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
-&trans          &trans        &trans        &trans        &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
-&trans          &trans        &trans        &trans                                &trans                          &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans      &trans            &trans    &trans  &trans       &trans   &trans  &trans  &bootloader
+&trans          &trans        &cap_omega    &trans        &trans  &trans      &cap_phi          &cap_psi  &trans  &cap_theta   &cap_pi  &trans  &trans  &trans
+&trans          &trans        &cap_sigma    &cap_delta    &trans  &cap_gamma  &trans            &trans    &trans  &cap_lambda  &trans   &trans          &trans
+&trans          &trans        &trans        &trans        &trans  &trans      &trans            &trans    &trans  &trans       &trans                   &trans
+&trans          &trans        &trans        &to 0                                       &trans                                 &to 2    &to 0   &trans  &trans
             >;
         };
     };
