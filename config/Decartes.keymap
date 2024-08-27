@@ -5,7 +5,7 @@
 
 #define DEFAULT 0
 
-/{
+/ {
     macros {
         BB130: BB130 {
             compatible = "zmk,behavior-macro";
@@ -237,7 +237,7 @@
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LALT>;
             label = "DEGREE";
         };
-};
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -256,7 +256,7 @@
             bindings = <
 &kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans  &trans  &trans             &kp N7  &kp N8    &kp N9   &kp SLASH  &kp MINUS             &kp EQUAL              &kp BSPC
 &kp TAB         &trans      &kp UP            &trans         &trans  &trans  &trans             &kp N4  &kp N5    &kp N6   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_NUMLOCK
-&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT      &trans  &trans  &trans             &kp N1  &kp N2    &kp N3   &kp MINUS  &trans                                       &kp RET
+&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT      &trans  &trans  &trans             &kp N1  &kp N2    &kp N3   &kp MINUS  &degree                                      &kp RET
 &kp LSHFT       &trans      &trans            &kp C_AL_CALC  &trans  &BB130  &trans             &kp N0  &Double0  &kp DOT  &kp PLUS                                                &kp RSHFT
 &kp LCTRL       &kp LGUI    &trans            &to 0                                  &kp SPACE                             &to 0      &to 2                 &trans                 &kp DEL
             >;
@@ -274,11 +274,21 @@
 
         bluetooth {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans      &trans            &trans    &trans  &trans       &trans   &trans  &trans  &bootloader
-&trans          &trans        &cap_omega    &trans        &trans  &trans      &cap_phi          &cap_psi  &trans  &cap_theta   &cap_pi  &trans  &trans  &trans
-&trans          &trans        &cap_sigma    &cap_delta    &trans  &cap_gamma  &trans            &trans    &trans  &cap_lambda  &trans   &trans          &trans
-&trans          &trans        &trans        &trans        &trans  &trans      &trans            &trans    &trans  &trans       &trans                   &trans
-&trans          &trans        &trans        &to 0                                       &trans                                 &to 2    &to 0   &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans      &trans            &trans    &trans  &trans       &trans   &trans   &trans  &trans
+&trans  &trans        &cap_omega    &trans        &trans  &trans      &cap_phi          &cap_psi  &trans  &cap_theta   &cap_pi  &trans   &trans  &trans
+&trans  &trans        &cap_sigma    &cap_delta    &trans  &cap_gamma  &trans            &trans    &trans  &cap_lambda  &trans   &degree          &trans
+&trans  &trans        &trans        &trans        &trans  &trans      &trans            &trans    &trans  &trans       &trans                    &trans
+&trans  &trans        &trans        &to 0                                       &trans                                 &to 2    &to 0    &to 4   &trans
+            >;
+        };
+
+        clear {
+            bindings = <
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
+&trans          &trans  &trans  &to 0                           &trans                          &trans  &trans  &trans  &trans
             >;
         };
     };
