@@ -5,7 +5,7 @@
 
 #define DEFAULT 0
 
-/ {
+{
     macros {
         BB130: BB130 {
             compatible = "zmk,behavior-macro";
@@ -152,6 +152,7 @@
             #binding-cells = <0>;
             bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kt LALT>;
             label = "MU";
+        };
 
         nu: nu {
             compatible = "zmk,behavior-macro";
