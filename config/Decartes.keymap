@@ -147,6 +147,12 @@
             label = "LAMBDA";
         };
 
+        mu: mu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kt LALT>;
+            label = "MU";
+
         nu: nu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
