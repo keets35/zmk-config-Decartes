@@ -5,7 +5,7 @@
 
 #define DEFAULT 0
 
-{
+/{
     macros {
         BB130: BB130 {
             compatible = "zmk,behavior-macro";
