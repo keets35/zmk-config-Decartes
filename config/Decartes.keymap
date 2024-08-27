@@ -231,13 +231,13 @@
             label = "DOUBLE0";
         };
 
-        mu: mu {
+        degree: degree {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kt LALT>;
-            label = "MU";
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LALT>;
+            label = "DEGREE";
         };
-    };
+};
 
     keymap {
         compatible = "zmk,keymap";
@@ -266,7 +266,7 @@
             bindings = <
 &kp GRAVE  &kp F1  &kp F2  &kp F3    &kp F4  &kp F5  &kp F6             &kp F7  &kp F8  &kp F9   &kp F10  &kp F11  &kp F12  &kp BSPC
 &trans     &trans  &omega  &epsilon  &rho    &tau    &phi               &psi    &xi     &theta   &pi      &trans   &trans   &trans
-&trans     &alpha  &sigma  &delta    &trans  &gamma  &trans             &trans  &kappa  &lambda  &trans   &trans            &trans
+&trans     &alpha  &sigma  &delta    &trans  &gamma  &trans             &trans  &kappa  &lambda  &trans   &degree           &trans
 &trans     &zeta   &chi    &trans    &nu     &beta   &eta               &mu     &trans  &trans   &trans                     &trans
 &trans     &trans  &trans  &to 0                             &kp SPACE                           &to 1    &to 3    &trans   &trans
             >;
