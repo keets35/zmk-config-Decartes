@@ -17,7 +17,7 @@
         cap_gamma: cgamma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kt LALT>;
             label = "CGAMMA";
         };
 
@@ -31,7 +31,7 @@
         cap_theta: ctheta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_3 &kt LALT>;
             label = "CTHETA";
         };
 
@@ -52,14 +52,14 @@
         cap_sigma: cap_sigma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_8 &kt LALT>;
             label = "CAP_SIGMA";
         };
 
         cap_phi: cap_phi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_4 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kt LALT>;
             label = "CAP_PHI";
         };
 
@@ -73,7 +73,7 @@
         cap_omega: cap_omega {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_7 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_4 &kt LALT>;
             label = "CAP_OMEGA";
         };
 
@@ -101,14 +101,14 @@
         delta: delta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_8 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_5 &kt LALT>;
             label = "DELTA";
         };
 
         epsilon: epsilon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_9 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_8 &kt LALT>;
             label = "EPSILON";
         };
 
@@ -164,7 +164,7 @@
         pi: pi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_0 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_7 &kt LALT>;
             label = "PI";
         };
 
@@ -178,21 +178,21 @@
         sigma: sigma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_3 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_9 &kt LALT>;
             label = "SIGMA";
         };
 
         tau: tau {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kt LALT>;
             label = "TAU";
         };
 
         phi: phi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_6 &kt LALT>;
+            bindings = <&kt LEFT_ALT &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_7 &kt LALT>;
             label = "PHI";
         };
 
