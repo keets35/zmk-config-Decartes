@@ -244,22 +244,22 @@
 
         BT0 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <60 1>;
+            key-positions = <1 46>;
         };
 
         BT1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <60 2>;
+            key-positions = <2 46>;
         };
 
         BT2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <60 3>;
+            key-positions = <3 46>;
         };
 
         BT_Clear {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <0 60>;
+            key-positions = <0 46>;
         };
     };
 
