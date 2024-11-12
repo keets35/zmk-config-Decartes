@@ -239,6 +239,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        BT0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <60 1>;
+        };
+
+        BT1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <60 2>;
+        };
+
+        BT2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <60 3>;
+        };
+
+        BT_Clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <0 60>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -254,41 +278,31 @@
 
         num_arrows {
             bindings = <
-&kp ESC         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans  &trans  &trans             &kp N7  &kp N8    &kp N9   &kp SLASH  &kp MINUS             &kp EQUAL              &kp BSPC
-&kp TAB         &trans      &kp UP            &trans         &trans  &trans  &trans             &kp N4  &kp N5    &kp N6   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_NUMLOCK
-&kp KP_NUMLOCK  &kp LEFT    &kp DOWN          &kp RIGHT      &trans  &trans  &trans             &kp N1  &kp N2    &kp N3   &kp MINUS  &degree                                      &kp RET
-&kp LSHFT       &trans      &trans            &kp C_AL_CALC  &trans  &BB130  &trans             &kp N0  &Double0  &kp DOT  &kp PLUS                                                &kp RSHFT
-&kp LCTRL       &kp LGUI    &trans            &to 0                                  &kp SPACE                             &to 0      &to 2                 &trans                 &kp DEL
+&kp GRAVE       &kp F1      &kp F2    &kp F3         &kp F4  &kp F5  &kp F6             &kp F7  &kp F8      &kp F9      &kp F10   &kp F11  &kp F12  &kp BSPC
+&kp TAB         &kp C_PREV  &kp UP    &kp C_NEXT     &trans  &trans  &trans             &trans  &trans      &trans      &trans    &trans   &trans   &trans
+&kp KP_NUMLOCK  &kp LEFT    &kp DOWN  &kp RIGHT      &trans  &trans  &trans             &trans  &trans      &trans      &trans    &degree           &kp RET
+&kp LSHFT       &trans      &trans    &kp C_AL_CALC  &trans  &BB130  &trans             &trans  &kp C_PREV  &kp C_NEXT  &kp C_PP                    &kp RSHFT
+&kp LCTRL       &kp LGUI    &trans    &to 0                                  &kp SPACE                                  &to 0     &to 2    &trans   &kp DEL
             >;
         };
 
         Greeks_Fs {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3    &kp F4  &kp F5  &kp F6             &kp F7  &kp F8  &kp F9   &kp F10  &kp F11  &kp F12  &kp BSPC
-&trans     &trans  &omega  &epsilon  &rho    &tau    &phi               &psi    &xi     &theta   &pi      &trans   &trans   &trans
-&trans     &alpha  &sigma  &delta    &trans  &gamma  &trans             &trans  &kappa  &lambda  &trans   &degree           &trans
-&trans     &zeta   &chi    &trans    &nu     &beta   &eta               &mu     &trans  &trans   &trans                     &trans
-&trans     &trans  &trans  &to 0                             &kp SPACE                           &to 1    &to 3    &trans   &trans
+&trans  &trans  &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans   &trans  &trans   &trans  &kp BSPC
+&trans  &trans  &omega  &epsilon  &rho    &tau    &phi               &psi    &xi     &theta   &pi     &trans   &trans  &trans
+&trans  &alpha  &sigma  &delta    &trans  &gamma  &trans             &trans  &kappa  &lambda  &trans  &degree          &trans
+&mo 3   &zeta   &chi    &trans    &nu     &beta   &eta               &mu     &trans  &trans   &trans                   &mo 3
+&trans  &trans  &trans  &to 0                             &kp SPACE                           &to 1   &to 3    &trans  &trans
             >;
         };
 
-        bluetooth {
+        GreekCaps {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans      &trans            &trans    &trans  &trans       &trans   &trans   &trans  &trans
-&trans  &trans        &cap_omega    &trans        &trans  &trans      &cap_phi          &cap_psi  &trans  &cap_theta   &cap_pi  &trans   &trans  &trans
-&trans  &trans        &cap_sigma    &cap_delta    &trans  &cap_gamma  &trans            &trans    &trans  &cap_lambda  &trans   &degree          &trans
-&trans  &trans        &trans        &trans        &trans  &trans      &trans            &trans    &trans  &trans       &trans                    &trans
-&trans  &trans        &trans        &to 0                                       &trans                                 &to 2    &to 0    &to 4   &trans
-            >;
-        };
-
-        clear {
-            bindings = <
-&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans                  &trans
-&trans          &trans  &trans  &to 0                           &trans                          &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans      &trans  &trans      &trans            &trans    &trans  &trans       &trans   &trans   &trans  &trans
+&trans  &trans  &cap_omega  &trans      &trans  &trans      &cap_phi          &cap_psi  &trans  &cap_theta   &cap_pi  &trans   &trans  &trans
+&trans  &trans  &cap_sigma  &cap_delta  &trans  &cap_gamma  &trans            &trans    &trans  &cap_lambda  &trans   &degree          &trans
+&trans  &trans  &trans      &trans      &trans  &trans      &trans            &trans    &trans  &trans       &trans                    &trans
+&trans  &trans  &trans      &to 0                                     &trans                                 &to 2    &to 0    &trans  &trans
             >;
         };
     };
