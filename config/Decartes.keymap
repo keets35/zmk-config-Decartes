@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
 
@@ -260,6 +259,11 @@
         BT_Clear {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 46>;
+        };
+
+        bt4 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <46 4>;
         };
     };
 
